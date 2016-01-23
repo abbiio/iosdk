@@ -1,0 +1,6 @@
+framework module ABBISDK {
+  umbrella header "ABBISDK.h"
+
+  export *
+  module * { export * }
+}
