@@ -16,15 +16,15 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "abbi"
-  s.version      = "0.0.12"
-  s.summary      = "Simple SDK for developers to manage and maximize conversions of all in-app promotions."
+  s.version      = "0.0.12f"
+  s.summary      = "Simple SDK for developers to manage and maximize conversions of all in-app promotions"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "Simple SDK for developers to manage and maximize conversions of all in-app promotions."
+  s.description  = "Simple SDK for developers to manage and maximize conversions of all in-app promotions"
 
   s.homepage     = "http://abbi.io"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
