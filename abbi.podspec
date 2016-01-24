@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "abbi"
-  s.version      = "0.0.12o"
+  s.version      = "0.0.12p"
   s.summary      = "Simple SDK for developers to manage and maximize conversions of all in-app promotions."
 
   # This description is used to generate tags and improve search results.
