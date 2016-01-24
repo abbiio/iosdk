@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   s.source_files  = "SDK/ABBISDK.framework/**"
   s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "SDK/ABBISDK.framework/Headers/*.h"
+  s.public_header_files = "SDK/ABBISDK.framework/Headers/ABBI.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
