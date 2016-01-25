@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :http => "https://s3-us-west-2.amazonaws.com/abbi-io-sdk/master/sdk/ios/rc/ABBISDK.zip" }
+  s.source       = { :git => "https://github.com/abbiio/iosdk.git" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
