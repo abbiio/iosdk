@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "abbi"
-  s.version      = "0.0.1437"
+  s.version      = "0.0.1438"
   s.summary      = "Simple SDK for developers to manage and maximize conversions of all in-app promotions."
 
   # This description is used to generate tags and improve search results.
@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -87,10 +87,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SDK/ABBISDK.framework/Headers/ABBI.h"
+  s.source_files  = "include/ABBISDK/ABBI.h"
   s.exclude_files = "Classes/Exclude"
+  s.preserve_paths = "libABBISDK.a"
 
-  s.public_header_files = "SDK/ABBISDK.framework/Headers/ABBI.h"
+  s.public_header_files = "include/ABBISDK/ABBI.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -114,10 +115,10 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "CoreMotion", "UIKit"
+  s.frameworks = "CoreMotion", "UIKit", "Social"
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.libraries = "abbi"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,7 +131,5 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/abbi\"" }
   # s.dependency "JSONKit", "~> 1.4"
-
-  s.ios.vendored_frameworks = 'SDK/ABBISDK.framework'
 
 end
