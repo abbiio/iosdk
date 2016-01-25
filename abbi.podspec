@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/abbiio/iosdk.git" }
+  s.source       = { :http => "https://s3-us-west-2.amazonaws.com/abbi-io-sdk/master/sdk/ios/rc/ABBISDK.zip" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -131,6 +131,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-  s.ios.vendored_frameworks = 'SDK/ABBISDK.framework'
+  # s.ios.vendored_frameworks = 'SDK/ABBISDK.framework'
 
 end
