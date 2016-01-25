@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "CoreMotion", "UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -128,9 +128,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/abbi\"" }
   # s.dependency "JSONKit", "~> 1.4"
 
-  # s.ios.vendored_frameworks = 'SDK/ABBISDK.framework'
+  s.ios.vendored_frameworks = 'SDK/ABBISDK.framework'
 
 end
