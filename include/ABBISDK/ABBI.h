@@ -11,6 +11,10 @@
 
 @interface ABBI : NSObject
 
+// Start ABBI SDK
 +(void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey;
+
+// Utility function for remote sessions with ABBI support team
++(void) setFlag: (int) n;
 
 @end
