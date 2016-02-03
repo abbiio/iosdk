@@ -1,2 +1,39 @@
-# iosdk
-Abbi iOS SDK
+![alt text](https://console.abbi.io/images/abbi.png)
+
+# Abbi iOS SDK
+A Simple SDK for developers to manage and maximize conversions of all in-app promotions.
+
+### How it works
+* Install Abbi SDK, no work and setup required - Abbi learns your app automatically
+* Abbi's patent pending technology understands your users and targets them at the right time and place
+* Don't settle for A/B testing - Abbi understands every user and every action point for maximum CTR
+* Launch and analyze in-app promotions in seconds, no need for app store approval
+
+### Installation
+With CocoaPods, add to your Podfile
+
+```sh
+pod 'abbi'
+```
+Open your project directory in terminal and run
+```sh
+$ pod install
+```
+
+In order to update with the lastest Abbi SDK, run
+```sh
+$ pod update
+```
+
+
+### Setup Your Abbi Account
+* Register for a new Abbi account [HERE](https://console.abbi.io/register "ABBI, Register")
+* Follow the instuctions.
+
+### Support
+* Email us with every question or comment at support@abbi.io
+* [Abbi Help Center](https://abbi.zendesk.com/hc)
+
+License
+----
+Commercial Software
