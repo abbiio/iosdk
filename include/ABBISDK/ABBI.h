@@ -21,6 +21,13 @@
 #import <Foundation/Foundation.h>
 
 /**
+ * Enum to Support Hybrid iOS apps (i.e. webview based apps)
+ * Use - (void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey andApplicationType:(ABBIAppType) type;
+ *
+ */
+typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11} ABBIAppType;
+
+/**
 * ABBI class manages the execution of ABBI SDK.
 * Navigate to https://console.abbi.io to Register/Login and Manage Your Promotions
 * For support, drop us an email at Support@abbi.io
@@ -36,6 +43,17 @@
  * and click the settings icon near your Application Name. You can find more info here - https://abbi.zendesk.com/hc
  */
 +(void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey;
+
+/** FOR HYBRID APPS ONLY! - Starts ABBI SDK.
+ *
+ * @param appId The Application Id provided by ABBI
+ * @param appSecretKey The Application Secret key provided by ABBI
+ * @param type The Application Type (i.e. ABBI_APP_HYBRID)
+ *
+ * To get your Application Id and Application Secret key, login to Abbi console at https://console.abbi.io
+ * and click the settings icon near your Application Name. You can find more info here - https://abbi.zendesk.com/hc
+ */
++(void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey andApplicationType:(ABBIAppType) type;
 
 //
 /** Utility function for remote sessions with ABBI support team.
