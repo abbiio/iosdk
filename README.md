@@ -1,5 +1,7 @@
 ![alt text](https://console.abbi.io/images/abbi.png)
 
+Abbi increases in-app engagement and revenues - automatically. Abbi’s patent pending technology learns and understands user usage behavior and identifies the users "*happy moments*" and acts upon them in real time. Abbi focuses on increasing engagement, monetization and retention for mobile apps.
+
 # Abbi iOS SDK
 A Simple SDK for developers to manage and maximize conversions of all in-app promotions.
 
