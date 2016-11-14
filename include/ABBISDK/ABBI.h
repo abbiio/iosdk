@@ -25,7 +25,7 @@
  * Use - (void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey andApplicationType:(ABBIAppType) type;
  *
  */
-typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11} ABBIAppType;
+typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12, ABBI_APP_UNITY = 13} ABBIAppType;
 
 /**
 * ABBI class manages the execution of ABBI SDK.
