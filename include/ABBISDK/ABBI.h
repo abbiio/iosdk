@@ -26,6 +26,7 @@
  *
  */
 typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12, ABBI_APP_UNITY = 13} ABBIAppType;
+typedef enum {GOAL = 1} EventType;
 
 /**
 * ABBI class manages the execution of ABBI SDK.
@@ -55,11 +56,28 @@ typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12,
  */
 +(void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey andApplicationType:(ABBIAppType) type;
 
-//
+/**
+ * Sends a Goal to ABBI's Backend.
+ * A Goal is a user action that can be used to target your users.
+ *
+ * Usage Example :
+ *
+ * [ABBI sendGoal:@"Bought a blue sword" withProperites:nil]
+ * [ABBI sendGoal:@"Bought a blue sword" withProperites:@{@"item_name", @"unlimited_calls"}]
+ *
+ * @param goalName the Goal name.
+ * @param properties the Goal properties, key-value structured (if any).
+ */
++(void) sendGoal:(NSString*) goalName withProperites:(NSDictionary*) properties;
+
+
 /** Utility function for remote sessions with ABBI support team.
  *
  * @param n Will be given by ABBI support team when needed
  */
 +(void) setFlag: (int) n;
+
+
+
 
 @end
