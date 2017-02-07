@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "abbi"
-  s.version      = "1.0.69"
+  s.version      = "1.0.70"
   s.summary      = "Simple SDK for developers to manage and maximize conversions of all in-app promotions."
 
   # This description is used to generate tags and improve search results.
@@ -125,7 +125,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/abbi\"" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/abbi\"", "OTHER_LDFLAGS" => "-lObjC" }
   s.vendored_libraries = 'libABBISDK.a'
   # s.dependency "JSONKit", "~> 1.4"
 
