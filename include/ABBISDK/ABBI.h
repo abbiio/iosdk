@@ -71,6 +71,20 @@ typedef enum {GOAL = 1} EventType;
 +(void) sendGoal:(NSString*) goalName withProperites:(NSDictionary*) properties;
 
 
+/**
+ * Set user data properties
+ * Save additional properties on the user
+ *
+ * Usage Example :
+ *
+ * [ABBI setUserDataKey:@"isProUser" withValue:@"YES"]
+ * [ABBI setUserDataProperties:@{@"isProUser" : @"YES", @"didPurchaseItems" : @"YES"}]
+ *
+ */
+
++(void) setUserDataKey:(NSString*)key withValue:(NSString*)value;
++(void) setUserDataProperties:(NSDictionary<NSString*,NSString*>*)properties;
+
 /** Utility function for remote sessions with ABBI support team.
  *
  * @param n Will be given by ABBI support team when needed
