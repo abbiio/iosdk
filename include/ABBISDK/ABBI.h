@@ -60,7 +60,7 @@ typedef enum {GOAL = 1} EventType;
  * Sends a Goal to ABBI's Backend.
  * A Goal is a user action that can be used to target your users.
  *
- * Usage Example :
+ * Usage Example :@
  *
  * [ABBI sendGoal:@"Bought a blue sword" withProperites:nil]
  * [ABBI sendGoal:@"Bought a blue sword" withProperites:@{@"item_name", @"unlimited_calls"}]
@@ -92,6 +92,16 @@ typedef enum {GOAL = 1} EventType;
 +(void) setFlag: (int) n;
 
 
+/**
+ * Launches a campaign by trigger key
+ * Once invoked, the method will show the campaign WITHOUT any of its segments (if defined)
+ *
+ * Usage Example :
+ *
+ * [ABBI trigger:@"Show How To Order Credit Card"]
+ * 
+ */
++(void) trigger: (NSString*) myTriggerName;
 
 
 @end

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "abbi"
-  s.version      = "1.1.07"
+  s.version      = "1.1.15"
   s.summary      = "Simple SDK for developers to manage and maximize conversions of all in-app promotions."
 
   # This description is used to generate tags and improve search results.
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "CoreMotion", "UIKit", "Social", "StoreKit", "SystemConfiguration", "WebKit"
+  s.frameworks = "CoreMotion", "UIKit", "Social", "StoreKit", "SystemConfiguration", "WebKit", "AudioToolbox"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
