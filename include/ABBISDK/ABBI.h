@@ -70,27 +70,62 @@ typedef enum {GOAL = 1} EventType;
  */
 +(void) sendGoal:(NSString*) goalName withProperites:(NSDictionary*) properties;
 
+/**
+ * Deprecated. Please use setUserAttributeWithKey:andValue: instead.
+ */
++(void) setUserDataKey:(NSString*)key withValue:(NSString*)value DEPRECATED_MSG_ATTRIBUTE("use setUserAttributeWithKey:andValue:");
 
 /**
- * Set user data properties
- * Save additional properties on the user
- *
- * Usage Example :
- *
- * [ABBI setUserDataKey:@"isProUser" withValue:@"YES"]
- * [ABBI setUserDataProperties:@{@"isProUser" : @"YES", @"didPurchaseItems" : @"YES"}]
- *
+ * Deprecated. Please use setUserAttributes: instead.
  */
++(void) setUserDataProperties:(NSDictionary<NSString*,NSString*>*)properties DEPRECATED_MSG_ATTRIBUTE("use setUserAttributes:");
 
-+(void) setUserDataKey:(NSString*)key withValue:(NSString*)value;
-+(void) setUserDataProperties:(NSDictionary<NSString*,NSString*>*)properties;
+/**
+ * Sets a user attribute
+ 
+ * Usage example:
+ 
+ * [ABBI setUserAttributeWithKey:@"isProUser" andValue:@"YES"];
+ */
++ (void)setUserAttributeWithKey:(NSString *)key andValue:(id)value;
+
+/**
+ * Sets multiple user attributes
+ 
+ * Usage example:
+ 
+ * [ABBI setUserAttributes:@{@"isProUser" : @"YES", @"didPurchaseItems" : @"YES"}];
+ */
++ (void)setUserAttributes:(NSDictionary<NSString*,id> *)attributes;
+
+/**
+ * Sets a private user attribute
+ 
+ * Usage example:
+ 
+ * [ABBI setPrivateUserAttributeWithKey:@"isProUser" andValue:@"YES"];
+ */
++ (void)setPrivateUserAttributeWithKey:(NSString *)key andValue:(id)value;
+
+/**
+ * Sets multiple private user attributes
+ 
+ * Usage example:
+ 
+ * [ABBI setPrivateUserAttributes:@{@"isProUser" : @"YES", @"didPurchaseItems" : @"YES"}];
+ */
++ (void)setPrivateUserAttributes:(NSDictionary<NSString*,id> *)attributes;
+
+/**
+ * Clears all private user attributes
+ */
++ (void)clearPrivateUserAttributes;
 
 /** Utility function for remote sessions with ABBI support team.
  *
  * @param n Will be given by ABBI support team when needed
  */
 +(void) setFlag: (int) n;
-
 
 /**
  * Launches a campaign by trigger key
