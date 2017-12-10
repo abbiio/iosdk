@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "abbi"
-  s.version      = "1.2.2"
+  s.version      = "${GIT_TAG_NAME}"
   s.summary      = "Simple SDK for developers to manage and maximize conversions of all in-app promotions."
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "In one line of code, ABBI provides the full life-cycle of in app marketing to your app. Create and manage your in app promotions and let ABBI do all the hard work and optimize your CTR's!"
 
-  s.homepage     = "http://abbi.io"
+  s.homepage     = "http://walkme.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +38,6 @@ Pod::Spec.new do |s|
   #
 
   s.license      = "Commercial"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -51,8 +50,8 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Abbi Ltd." => "support@abbi.io" }
-  s.social_media_url   = "http://twitter.com/goabbi"
+  s.author             = { "WalkMe Inc" => "http://walkme.com" }
+  # s.social_media_url   = "http://twitter.com/goabbi"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -61,7 +60,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -76,7 +75,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/abbiio/iosdk.git" }
+  # s.source       = { :git => "https://github.com/abbiio/iosdk.git" }
+  s.source       = { :git => "https://github.com/abbiio/iosdk.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,11 +88,9 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "include/ABBISDK/ABBI.h"
-  s.exclude_files = "Classes/Exclude"
-  s.preserve_paths = "libABBISDK.a"
-
+  s.preserve_paths = "WalkMeSDK.framework"
   s.public_header_files = "include/ABBISDK/ABBI.h"
-
+  #s.exclude_files = "Classes/Exclude"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -104,7 +102,6 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
-
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
@@ -114,7 +111,6 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
   s.frameworks = "CoreMotion", "UIKit", "Social", "StoreKit", "SystemConfiguration", "WebKit", "AudioToolbox"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -126,7 +122,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/abbi\"", "OTHER_LDFLAGS" => "-lObjC" }
-  s.vendored_libraries = 'libABBISDK.a'
-  # s.dependency "JSONKit", "~> 1.4"
+  #s.vendored_libraries = 'libABBISDK.a'
+  s.vendored_frameworks = 'WalkMeSDK.framework'
 
 end

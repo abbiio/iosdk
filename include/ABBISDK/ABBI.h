@@ -35,7 +35,8 @@ typedef enum {GOAL = 1} EventType;
 */
 @interface ABBI : NSObject
 
-/** Starts ABBI SDK.
+/** 
+ * Starts ABBI SDK.
  *
  * @param appId The Application Id provided by ABBI
  * @param appSecretKey The Application Secret key provided by ABBI
@@ -43,9 +44,10 @@ typedef enum {GOAL = 1} EventType;
  * To get your Application Id and Application Secret key, login to Abbi console at https://console.abbi.io
  * and click the settings icon near your Application Name. You can find more info here - https://abbi.zendesk.com/hc
  */
-+(void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey;
++ (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey;
 
-/** FOR HYBRID APPS ONLY! - Starts ABBI SDK.
+/** 
+ * Starts ABBI SDK - FOR HYBRID APPS ONLY!
  *
  * @param appId The Application Id provided by ABBI
  * @param appSecretKey The Application Secret key provided by ABBI
@@ -54,7 +56,7 @@ typedef enum {GOAL = 1} EventType;
  * To get your Application Id and Application Secret key, login to Abbi console at https://console.abbi.io
  * and click the settings icon near your Application Name. You can find more info here - https://abbi.zendesk.com/hc
  */
-+(void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey andApplicationType:(ABBIAppType) type;
++ (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey andApplicationType:(ABBIAppType)type;
 
 /**
  * Sends a Goal to ABBI's Backend.
@@ -68,51 +70,63 @@ typedef enum {GOAL = 1} EventType;
  * @param goalName the Goal name.
  * @param properties the Goal properties, key-value structured (if any).
  */
-+(void) sendGoal:(NSString*) goalName withProperites:(NSDictionary*) properties;
++ (void)sendGoal:(NSString *)goalName withProperites:(NSDictionary *)properties;
 
 /**
  * Deprecated. Please use setUserAttributeWithKey:andValue: instead.
  */
-+(void) setUserDataKey:(NSString*)key withValue:(NSString*)value DEPRECATED_MSG_ATTRIBUTE("use setUserAttributeWithKey:andValue:");
++ (void)setUserDataKey:(NSString*)key withValue:(NSString*)value DEPRECATED_MSG_ATTRIBUTE("use setUserAttributeWithKey:andValue:");
 
 /**
  * Deprecated. Please use setUserAttributes: instead.
  */
-+(void) setUserDataProperties:(NSDictionary<NSString*,NSString*>*)properties DEPRECATED_MSG_ATTRIBUTE("use setUserAttributes:");
++ (void)setUserDataProperties:(NSDictionary<NSString*,NSString*>*)properties DEPRECATED_MSG_ATTRIBUTE("use setUserAttributes:");
 
 /**
  * Sets a user attribute
- 
- * Usage example:
- 
- * [ABBI setUserAttributeWithKey:@"isProUser" andValue:@"YES"];
+ *
+ * @param key the attribute key
+ * @param value the attribute value
+ * 
+ * @code
+ * Usage Examples:
+ * [ABBI setUserAttributeWithKey:@"isProUser" andValue:@YES];
+ * [ABBI setUserAttributeWithKey:@"isLoggedIn" andValue:@(0)];
  */
 + (void)setUserAttributeWithKey:(NSString *)key andValue:(id)value;
 
 /**
  * Sets multiple user attributes
- 
- * Usage example:
- 
- * [ABBI setUserAttributes:@{@"isProUser" : @"YES", @"didPurchaseItems" : @"YES"}];
+ *
+ * @param attributes the user attributes
+ * 
+ * @code
+ * Usage Example:
+ * [ABBI setUserAttributes:@{@"isProUser": @YES, @"isLoggedIn": @(0)}];
  */
 + (void)setUserAttributes:(NSDictionary<NSString*,id> *)attributes;
 
 /**
  * Sets a private user attribute
- 
- * Usage example:
- 
- * [ABBI setPrivateUserAttributeWithKey:@"isProUser" andValue:@"YES"];
+ *
+ * @param key the attribute key
+ * @param value the attribute value
+ *
+ * @code
+ * Usage Examples:
+ * [ABBI setPrivateUserAttributeWithKey:@"gender" andValue:@"female"];
+ * [ABBI setPrivateUserAttributeWithKey:@"balance" andValue:@(1000)];
  */
 + (void)setPrivateUserAttributeWithKey:(NSString *)key andValue:(id)value;
 
 /**
  * Sets multiple private user attributes
- 
- * Usage example:
- 
- * [ABBI setPrivateUserAttributes:@{@"isProUser" : @"YES", @"didPurchaseItems" : @"YES"}];
+ *
+ * @param attributes the private user attributes
+ *
+ * @code
+ * Usage Example:
+ * [ABBI setPrivateUserAttributes:@{@"gender": @"female", @"balance": @(1000)}];
  */
 + (void)setPrivateUserAttributes:(NSDictionary<NSString*,id> *)attributes;
 
@@ -121,22 +135,22 @@ typedef enum {GOAL = 1} EventType;
  */
 + (void)clearPrivateUserAttributes;
 
-/** Utility function for remote sessions with ABBI support team.
+/** 
+ * Utility function for remote sessions with ABBI support team.
  *
  * @param n Will be given by ABBI support team when needed
  */
-+(void) setFlag: (int) n;
++ (void)setFlag:(int)n;
 
 /**
  * Launches a campaign by trigger key
  * Once invoked, the method will show the campaign WITHOUT any of its segments (if defined)
  *
+ * @code
  * Usage Example :
- *
- * [ABBI trigger:@"Show How To Order Credit Card"]
- * 
+ * [ABBI trigger:@"Show How To Order Credit Card"];
  */
-+(void) trigger: (NSString*) myTriggerName;
++ (void)trigger:(NSString *)myTriggerName;
 
 
 @end
