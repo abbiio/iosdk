@@ -28,6 +28,8 @@
 typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12, ABBI_APP_UNITY = 13, ABBI_APP_MAX = 14} ABBIAppType;
 typedef enum {GOAL = 1} EventType;
 
+extern NSString *SDK_VERSION;
+
 /**
 * ABBI class manages the execution of ABBI SDK.
 * Navigate to https://console.abbi.io to Register/Login and Manage Your Promotions
