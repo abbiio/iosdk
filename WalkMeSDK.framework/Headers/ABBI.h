@@ -19,6 +19,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "WMCampaignInfo.h"
 
 /**
  * Enum to Support Hybrid iOS apps (i.e. webview based apps)
@@ -31,20 +32,36 @@ typedef enum {GOAL = 1} EventType;
 extern NSString *SDK_VERSION;
 
 /**
+ * Interface definition for a callback to be invoked in Campaign actions.
+ */
+@protocol WMCampaignInfoDelegate <NSObject>
+
+/**
+ * Called after campaign was dismissed.
+ *
+ * @param campaignInfo The dismissed campaign info.
+ */
+- (void)campaignDidDismiss:(WMCampaignInfo *)campaignInfo;
+
+@end
+
+/**
 * ABBI class manages the execution of ABBI SDK.
-* Navigate to https://console.abbi.io to Register/Login and Manage Your Promotions
-* For support, drop us an email at Support@abbi.io
+* Navigate to https://console.mobile.walkme.com to Register/Login and Manage Your Promotions
+* For support, drop us an email at support@walkme.com
 */
 @interface ABBI : NSObject
+
+@property (nonatomic,weak) id<WMCampaignInfoDelegate> campaignInfoDelegate;
 
 /** 
  * Starts ABBI SDK.
  *
- * @param appId The Application Id provided by ABBI
- * @param appSecretKey The Application Secret key provided by ABBI
+ * @param appId The Application Id provided by WalkMe
+ * @param appSecretKey The Application Secret key provided by WalkMe
  * 
- * To get your Application Id and Application Secret key, login to Abbi console at https://console.abbi.io
- * and click the settings icon near your Application Name. You can find more info here - https://abbi.zendesk.com/hc
+ * To get your Application Id and Application Secret key, login to WalkMe console at https://console.mobile.walkme.com
+ * and click the settings icon near your Application Name. You can find more info here - https://walkme-mobile.zendesk.com/hc
  */
 + (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey;
 
@@ -55,8 +72,6 @@ extern NSString *SDK_VERSION;
  * @param appSecretKey The Application Secret key provided by ABBI
  * @param type The Application Type (i.e. ABBI_APP_HYBRID)
  *
- * To get your Application Id and Application Secret key, login to Abbi console at https://console.abbi.io
- * and click the settings icon near your Application Name. You can find more info here - https://abbi.zendesk.com/hc
  */
 + (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey andApplicationType:(ABBIAppType)type;
 
@@ -73,16 +88,6 @@ extern NSString *SDK_VERSION;
  * @param properties the Goal properties, key-value structured (if any).
  */
 + (void)sendGoal:(NSString *)goalName withProperites:(NSDictionary *)properties;
-
-/**
- * Deprecated. Please use setUserAttributeWithKey:andValue: instead.
- */
-+ (void)setUserDataKey:(NSString*)key withValue:(NSString*)value DEPRECATED_MSG_ATTRIBUTE("use setUserAttributeWithKey:andValue:");
-
-/**
- * Deprecated. Please use setUserAttributes: instead.
- */
-+ (void)setUserDataProperties:(NSDictionary<NSString*,NSString*>*)properties DEPRECATED_MSG_ATTRIBUTE("use setUserAttributes:");
 
 /**
  * Sets a user attribute
@@ -154,5 +159,24 @@ extern NSString *SDK_VERSION;
  */
 + (void)trigger:(NSString *)myTriggerName;
 
+
+/**
+ * Sets user id
+ *
+ * @param userId the user id as NSString
+ *
+ * @code
+ * Usage Example:
+ * [ABBI setUserID:@"myuserid"];
+ */
++ (void)setUserID:(NSString*)userId;
+
+/**
+ * Register a delegate to campaign events
+ *
+ *@param delegate The delegate
+ *
+ */
++ (void)setCampaignInfoDelegate:(id<WMCampaignInfoDelegate>)delegate;
 
 @end
