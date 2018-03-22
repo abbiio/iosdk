@@ -87,9 +87,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "include/ABBISDK/ABBI.h"
+  s.source_files  = "include/ABBISDK/*.h"
   s.preserve_paths = "WalkMeSDK.framework"
-  s.public_header_files = "include/ABBISDK/ABBI.h"
+  s.public_header_files = "include/ABBISDK/*.h"
   #s.exclude_files = "Classes/Exclude"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
