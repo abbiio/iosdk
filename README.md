@@ -1,15 +1,15 @@
-![alt text](https://console.abbi.io/images/walkme.png)
+![alt text](https://console.mobile.walkme.com/images/walkme.png)
 
-Abbi increases in-app engagement and revenues - automatically. Abbi’s patent pending technology learns and understands user usage behavior and identifies the users "*happy moments*" and acts upon them in real time. Abbi focuses on increasing engagement, monetization and retention for mobile apps.
+WalkMe Mobile increases in-app engagement and revenues - automatically. WalkMe’s technology learns and understands user usage behavior, identifies the users "happy moments" and acts upon them in real time. 
 
-# Abbi iOS SDK
-A Simple SDK for developers to manage and maximize conversions of all in-app promotions.
+# WalkMe iOS SDK
+A Simple SDK that allows anyone to create and manage in-app content without coding and without deployment, to maximize in-app user engagement.
 
 ### How it works
-* Install Abbi SDK, no work and setup required - Abbi learns your app automatically
-* Abbi's patent pending technology understands your users and targets them at the right time and place
-* Don't settle for A/B testing - Abbi understands every user and every action point for maximum CTR
-* Launch and analyze in-app promotions in seconds, no need for app store approval
+* Install the WalkMe Mobile SDK, no work and setup required.
+* WalkMe’s technology understands your users and targets them at the right time and place.
+* Create in app content including interactive Walk-Thrus, ShoutOuts, Launchers and Web Resources.
+* Launch and analyze in-app content in seconds, no need for app store approval.
 
 ### Installation
 With CocoaPods, add to your Podfile
