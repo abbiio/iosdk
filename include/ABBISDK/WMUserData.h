@@ -11,17 +11,17 @@
 @interface WMUserData : NSObject
 
 /**
- * User Attributes in current session.
+ * User attributes in current session
  */
 @property (nonatomic,strong) NSDictionary *userAttributes;
 
 /**
- * Private User Attributes in current session.
+ * Private user attributes in current session
  */
 @property (nonatomic,strong) NSDictionary *privateUserAttributes;
 
 /**
- * User Session Duration in second.
+ * User session duration in seconds
  */
 @property (nonatomic,strong) NSNumber *sessionDuration;
 
@@ -31,68 +31,73 @@
 @property (nonatomic,strong) NSString *systemVersion;
 
 /**
- * Device Unique ID
+ * Device unique ID
  */
 @property (nonatomic,strong) NSString *deviceId;
 
 /**
- * Device Model.
+ * Device model
  */
 @property (nonatomic,strong) NSString *deviceModel;
 
 /**
- * Device Orientation PRT_REG / PRT_USD / LSL / LSR.
+ * Device orientation PRT_REG / PRT_USD / LSL / LSR
  */
 @property (nonatomic,strong) NSString *deviceOrientation;
 
 /**
- * The application version.
+ * Application version
  */
 @property (nonatomic,strong) NSString *appVersion;
 
 /**
- * The application name.
+ * Application name
  */
 @property (nonatomic,strong) NSString *appName;
 
 /**
- * Locale language for user's device.
+ * Locale language for user's device
  */
 @property (nonatomic,strong) NSString *locale;
 
 /**
- * WalkMe SDK version.
+ * WalkMe SDK version
  */
 @property (nonatomic,strong) NSString *sdkVer;
 
 /**
- * Session unique id.
+ * Session unique id
  */
 @property (nonatomic,strong) NSString *sessionId;
 
 /**
- * If Push notification approved for user.
+ * Is push notification approved for user
  */
 @property (nonatomic,strong) NSString *isPushEnabled;
 
 /**
- * User device timezone.
+ * User device timezone
  */
 @property (nonatomic,strong) NSString *timezone;
 
 /**
- * User current network ( WIFI / 3G ).
+ * User current network ( WIFI / CELLULAR / OFFLINE )
  */
 @property (nonatomic,strong) NSString *network;
 
 /**
- * User OS System Name.
+ * User OS system name
  */
 @property (nonatomic,strong) NSString *systemName;
 
 /**
- * Current Timestamp for this User.
+ * User creation timestamp
  */
-@property (nonatomic,strong) NSString *timestamp;
+@property (nonatomic,strong) NSNumber *userCreationTimestamp;
+
+/**
+ * Did the user use the app for the first time
+ */
+@property (nonatomic,assign) BOOL isNewUser;
 
 @end
