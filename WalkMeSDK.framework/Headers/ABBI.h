@@ -157,8 +157,17 @@ extern NSString *SDK_VERSION;
  * Usage Example :
  * [ABBI trigger:@"Show How To Order Credit Card"];
  */
-+ (void)trigger:(NSString *)myTriggerName;
++ (void)trigger:(NSString *)trigger;
 
+/**
+ * Launches a campaign by trigger key after redirecting the user to the given deep link
+ * Once invoked, the method will show the campaign WITHOUT any of its segments (if defined)
+ *
+ * @code
+ * Usage Example :
+ * [ABBI trigger:@"Show How To Order Credit Card" withDeepLink:@"myapp://main_screen"];
+ */
++ (void)trigger:(NSString*)trigger withDeepLink:(NSString*)deepLink;
 
 /**
  * Sets user id
