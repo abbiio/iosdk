@@ -65,6 +65,12 @@ extern NSString *SDK_VERSION;
  */
 + (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey;
 
+/**
+ * Restarts a new SDK session
+ *
+ */
++ (void)restart;
+
 /** 
  * Starts ABBI SDK - FOR HYBRID APPS ONLY!
  *
