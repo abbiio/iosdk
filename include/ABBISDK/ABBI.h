@@ -194,4 +194,14 @@ extern NSString *SDK_VERSION;
  */
 + (void)setCampaignInfoDelegate:(id<WMCampaignInfoDelegate>)delegate;
 
+/**
+ * Opens a URL
+ *
+ *@param url the URL that should be handled by the SDK
+ *@param options the options received from the app delegate "application:openURL:options:" method
+ *@return true if the SDK handled the openURL request successfully
+ *
+ */
++ (BOOL)openURL:(NSURL*)url options:(NSDictionary*)options;
+
 @end
