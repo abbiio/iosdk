@@ -27,7 +27,6 @@
  *
  */
 typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12, ABBI_APP_UNITY = 13, ABBI_APP_MAX = 14} ABBIAppType;
-typedef enum {GOAL = 1} EventType;
 
 extern NSString *SDK_VERSION;
 
@@ -80,6 +79,16 @@ extern NSString *SDK_VERSION;
  *
  */
 + (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey andApplicationType:(ABBIAppType)type;
+
+/**
+ * Starts ABBI SDK - FOR SELF-HOSTED APPS ONLY!
+ *
+ * @param appId The Application Id provided by ABBI
+ * @param appSecretKey The Application Secret key provided by ABBI
+ * @param url the self hosted url
+ *
+ */
++ (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey andSelfHostedURL:(NSString *)url;
 
 /**
  * Sends a Goal to ABBI's Backend.
