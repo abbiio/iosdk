@@ -28,6 +28,28 @@
  */
 typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12, ABBI_APP_UNITY = 13, ABBI_APP_MAX = 14} ABBIAppType;
 
+/**
+ * Enum for events which can be filtered from being sent
+ */
+typedef NS_ENUM(NSUInteger,WMStatsEventType)
+{
+    WMStatsEventTypeSessionStarted,
+    WMStatsEventTypeSessionStop,
+    WMStatsEventTypeAppTerminated,
+    WMStatsEventTypeAppEnteredFg,
+    WMStatsEventTypeAppEnteredBg,
+    WMStatsEventTypePromoImp,
+    WMStatsEventTypePromoClk,
+    WMStatsEventTypeStepImp,
+    WMStatsEventTypeStepClk,
+    WMStatsEventTypeInteraction,
+    WMStatsEventTypeGoal,
+    WMStatsEventTypeViewTransition,
+    WMStatsEventTypeMonitoring,
+    WMStatsEventTypeMonitoringElement,
+    WMStatsEventTypeMonitoringView,
+    WMStatsEventTypeUsers
+};
 extern NSString *SDK_VERSION;
 
 /**
@@ -65,8 +87,10 @@ extern NSString *SDK_VERSION;
 + (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey;
 
 /**
- * Restarts a new SDK session
+ * Restarts ABBI SDK.
  *
+ * This method can be called only after ABBI start was called first.
+ * Restart ABBI SDK is allowed if old session is at least 1 minute old
  */
 + (void)restart;
 
@@ -89,6 +113,14 @@ extern NSString *SDK_VERSION;
  *
  */
 + (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey andSelfHostedURL:(NSString *)url;
+
+/**
+ * Stop ABBI SDK.
+ *
+ * This method can be called only after ABBI start was called first.
+ * Stop abbi SDK is allowed if old session is at least 1 minute old
+ */
++ (void)stop;
 
 /**
  * Sends a Goal to ABBI's Backend.
@@ -198,7 +230,7 @@ extern NSString *SDK_VERSION;
 /**
  * Register a delegate to campaign events
  *
- *@param delegate The delegate
+ * @param delegate The delegate
  *
  */
 + (void)setCampaignInfoDelegate:(id<WMCampaignInfoDelegate>)delegate;
@@ -206,11 +238,23 @@ extern NSString *SDK_VERSION;
 /**
  * Opens a URL
  *
- *@param url the URL that should be handled by the SDK
- *@param options the options received from the app delegate "application:openURL:options:" method
- *@return true if the SDK handled the openURL request successfully
+ * @param url the URL that should be handled by the SDK
+ * @param options the options received from the app delegate "application:openURL:options:" method
+ * @return true if the SDK handled the openURL request successfully
  *
  */
 + (BOOL)openURL:(NSURL*)url options:(NSDictionary*)options;
+
+/**
+ * Set events that won't be sent
+ *
+ * @param events of type WMStatsEventType that won't be sent
+ *
+ * @code
+ * Usage Example :
+ * [ABBI setEventsFilter:@[@(WMStatsEventTypeInteraction), @(WMStatsEventTypeViewTransition)]];
+ *
+ */
++ (void)setEventsFilter:(NSArray<NSNumber*>*)events;
 
 @end
