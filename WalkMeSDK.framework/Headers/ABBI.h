@@ -48,7 +48,8 @@ typedef NS_ENUM(NSUInteger,WMStatsEventType)
     WMStatsEventTypeMonitoring,
     WMStatsEventTypeMonitoringElement,
     WMStatsEventTypeMonitoringView,
-    WMStatsEventTypeUsers
+    WMStatsEventTypeUsers,
+    WMStatsEventTypeOnboardingItemCompleted
 };
 extern NSString *SDK_VERSION;
 
