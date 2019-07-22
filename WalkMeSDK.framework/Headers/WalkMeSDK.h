@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char WalkMeSDKVersionString[];
 #import <WalkMeSDK/ABBI.h>
 #import <WalkMeSDK/WMCampaignInfo.h>
 #import <WalkMeSDK/WMUserData.h>
+#import <WalkMeSDK/UIView+WalkMe.h>

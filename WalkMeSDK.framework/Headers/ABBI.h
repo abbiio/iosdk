@@ -19,53 +19,9 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "WMCampaignInfo.h"
+#import "WMStartOptions.h"
 
-/**
- * Enum to Support Hybrid iOS apps (i.e. webview based apps)
- * Use - (void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey andApplicationType:(ABBIAppType) type;
- *
- */
-typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12, ABBI_APP_UNITY = 13, ABBI_APP_MAX = 14} ABBIAppType;
-
-/**
- * Enum for events which can be filtered from being sent
- */
-typedef NS_ENUM(NSUInteger,WMStatsEventType)
-{
-    WMStatsEventTypeSessionStarted,
-    WMStatsEventTypeSessionStop,
-    WMStatsEventTypeAppTerminated,
-    WMStatsEventTypeAppEnteredFg,
-    WMStatsEventTypeAppEnteredBg,
-    WMStatsEventTypePromoImp,
-    WMStatsEventTypePromoClk,
-    WMStatsEventTypeStepImp,
-    WMStatsEventTypeStepClk,
-    WMStatsEventTypeInteraction,
-    WMStatsEventTypeGoal,
-    WMStatsEventTypeViewTransition,
-    WMStatsEventTypeMonitoring,
-    WMStatsEventTypeMonitoringElement,
-    WMStatsEventTypeMonitoringView,
-    WMStatsEventTypeUsers,
-    WMStatsEventTypeOnboardingItemCompleted
-};
 extern NSString *SDK_VERSION;
-
-/**
- * Interface definition for a callback to be invoked in Campaign actions.
- */
-@protocol WMCampaignInfoDelegate <NSObject>
-
-/**
- * Called after campaign was dismissed.
- *
- * @param campaignInfo The dismissed campaign info.
- */
-- (void)campaignDidDismiss:(WMCampaignInfo *)campaignInfo;
-
-@end
 
 /**
 * ABBI class manages the execution of ABBI SDK.
@@ -114,6 +70,14 @@ extern NSString *SDK_VERSION;
  *
  */
 + (void)start:(NSString *)appId withSecretKey:(NSString *)appSecretKey andSelfHostedURL:(NSString *)url;
+
+/**
+ * Starts ABBI SDK!
+ *
+ * @param options The options to start the SDK 
+ *
+ */
++ (void)startWithOptions:(WMStartOptions *)options;
 
 /**
  * Stop ABBI SDK.
@@ -257,5 +221,23 @@ extern NSString *SDK_VERSION;
  *
  */
 + (void)setEventsFilter:(NSArray<NSNumber*>*)events;
+
+/**
+ * Set ID for a specific screen.
+ * When used, this should be called everytime the screen shows
+ *
+ * @param screenID the ID to set for a specific screen
+ *
+ */
++ (void)setScreenID:(NSString *)screenID;
+
+/**
+ * Set the language for your campaigns.
+ * When used, the language param you pass should match the name of one of the languages you’ve set up in the console.
+ *
+ * @param language the language for which you want the SDK to display your campaigns
+ *
+ */
++ (void)setLanguage:(NSString *)language;
 
 @end
