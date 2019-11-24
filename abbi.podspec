@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = "WalkMeSDK.framework"
   s.frameworks = "CoreMotion", "UIKit", "Social", "StoreKit", "SystemConfiguration", "WebKit", "AudioToolbox"
   s.requires_arc = true
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/abbi\"", "OTHER_LDFLAGS" => "-lObjC" }
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/abbi\"", "OTHER_LDFLAGS" => "-ObjC" }
   s.vendored_frameworks = 'WalkMeSDK.framework'
 
 end
