@@ -31,6 +31,7 @@ extern NSString *SDK_VERSION;
 @interface ABBI : NSObject
 
 @property (nonatomic,weak) id<WMCampaignInfoDelegate> campaignInfoDelegate;
+@property (nonatomic,weak) id<WMAnalyticsDelegate> analyticsDelegate;
 
 /** 
  * Starts ABBI SDK.
@@ -199,6 +200,14 @@ extern NSString *SDK_VERSION;
  *
  */
 + (void)setCampaignInfoDelegate:(id<WMCampaignInfoDelegate>)delegate;
+
+/**
+ * Register a delegate to analytics events
+ *
+ * @param delegate The delegate
+ *
+ */
++ (void)setAnalyticsDelegate:(id<WMAnalyticsDelegate>)delegate;
 
 /**
  * Opens a URL
