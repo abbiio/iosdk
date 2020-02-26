@@ -19,7 +19,7 @@ typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12,
 /**
  * Enum for events which can be filtered from being sent
  */
-typedef NS_ENUM(NSUInteger,WMStatsEventType)
+typedef NS_ENUM(NSUInteger, WMStatsEventType)
 {
     WMStatsEventTypeSessionStarted,
     WMStatsEventTypeSessionStop,
@@ -53,6 +53,18 @@ NS_ASSUME_NONNULL_BEGIN
  * @param campaignInfo The dismissed campaign info.
  */
 - (void)campaignDidDismiss:(WMCampaignInfo *)campaignInfo;
+
+@end
+
+@protocol WMAnalyticsDelegate <NSObject>
+
+/**
+ * Called after an analytics event was sent.
+ *
+ * @param type The type of the event
+ * @param payload The payload json that contains the event details
+ */
+- (void)didSendAnalyticsEventOfType:(WMStatsEventType)type withPayload:(NSDictionary<NSString *, id> *)payload;
 
 @end
 
