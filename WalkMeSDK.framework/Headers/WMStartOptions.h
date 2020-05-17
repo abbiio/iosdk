@@ -76,7 +76,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *selfHostedURL;
 @property (nonatomic, strong) NSArray<NSNumber *> *events;
 @property (nonatomic, assign) ABBIAppType type;
+@property (nonatomic, assign) BOOL automationEnabled;
 @property (nonatomic, weak) id<WMCampaignInfoDelegate> campaignInfoDelegate;
+@property (nonatomic, weak) id<WMAnalyticsDelegate> analyticsDelegate;
 
 - (instancetype)initWithKey:(NSString *)key andSecret:(NSString *)secret;
 
