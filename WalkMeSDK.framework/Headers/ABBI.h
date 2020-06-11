@@ -249,4 +249,10 @@ extern NSString *SDK_VERSION;
  */
 + (void)setLanguage:(NSString *)language;
 
+/**
+ * Dismiss currently presented campaign, in case nothing is presented this API does nothing.
+ * Exception for launcher campaigns which are not affected by this API.
+ */
++ (void)dismissCampaign;
+
 @end
