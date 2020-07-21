@@ -77,6 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray<NSNumber *> *events;
 @property (nonatomic, assign) ABBIAppType type;
 @property (nonatomic, assign) BOOL automationEnabled;
+@property (nonatomic, assign) BOOL powerModeEnabled;
 @property (nonatomic, weak) id<WMCampaignInfoDelegate> campaignInfoDelegate;
 @property (nonatomic, weak) id<WMAnalyticsDelegate> analyticsDelegate;
 
