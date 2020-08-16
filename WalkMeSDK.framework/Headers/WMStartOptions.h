@@ -52,7 +52,16 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @param campaignInfo The dismissed campaign info.
  */
+@optional
 - (void)campaignDidDismiss:(WMCampaignInfo *)campaignInfo;
+
+/**
+ * Called right before the campaign is about to be shown (will not be called on Power Mode preview)
+ *
+ * @param campaignInfo The shown campaign info.
+ */
+@optional
+- (void)campaignWillShow:(WMCampaignInfo *)campaignInfo;
 
 @end
 
@@ -68,6 +77,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@class WMSessionConfiguration;
+
 @interface WMStartOptions : NSObject
 
 @property (nonatomic, strong, readonly) NSString *key;
@@ -78,6 +89,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) ABBIAppType type;
 @property (nonatomic, assign) BOOL automationEnabled;
 @property (nonatomic, assign) BOOL powerModeEnabled;
+@property (nonatomic, assign) NSTimeInterval sessionTimeout;
 @property (nonatomic, weak) id<WMCampaignInfoDelegate> campaignInfoDelegate;
 @property (nonatomic, weak) id<WMAnalyticsDelegate> analyticsDelegate;
 
