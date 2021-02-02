@@ -63,6 +63,15 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 - (void)campaignWillShow:(WMCampaignInfo *)campaignInfo;
 
+/**
+ * Call to return the index path of the element which matches the passed description
+ *
+ * @param description description for item in campaign.
+ * @param campaignInfo The shown campaign info.
+ */
+@optional
+- (id)valueForActionType:(NSString *)type forCampaign:(WMCampaignInfo *)campaign withArgs:(NSArray<NSString *> *)args;
+
 @end
 
 @protocol WMAnalyticsDelegate <NSObject>
