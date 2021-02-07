@@ -64,14 +64,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)campaignWillShow:(WMCampaignInfo *)campaignInfo;
 
 /**
- * Return a value for SWT Action step of type “Callback”
+ * Return a value in the completion block for SWT Action step of type “Callback”
  *
- * @param type the action type (ex. scroll).
  * @param campaign The shown campaign info.
+ * @param actionType the action type (ex. scroll).
  * @param args array of values from the Value field on the console (comma separated values).
+ * @param completion a block to return a value for the action step
  */
 @optional
-- (id)valueForActionType:(NSString *)type forCampaign:(WMCampaignInfo *)campaign withArgs:(NSArray<NSString *> *)args;
+- (void)campaign:(WMCampaignInfo *)campaign didPerformAction:(NSString *)actionType withArgs:(NSArray<NSString *> *)args andCompletion:(void (^)(id result))completion;
 
 @end
 
