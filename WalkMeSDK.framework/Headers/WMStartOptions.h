@@ -40,6 +40,15 @@ typedef NS_ENUM(NSUInteger, WMStatsEventType)
     WMStatsEventTypeOnboardingItemCompleted
 };
 
+/**
+ * Enum for proxy mode
+ */
+typedef NS_ENUM(NSUInteger, WMProxyOptionMode)
+{
+    WMProxyOptionModeAll = 0,
+    WMProxyOptionModeAnalytics = 1
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -100,6 +109,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *userId;
 @property (nonatomic, strong) NSArray<NSNumber *> *events;
 @property (nonatomic, assign) ABBIAppType type;
+@property (nonatomic, assign) WMProxyOptionMode proxyGatewayMode;
 @property (nonatomic, assign) BOOL automationEnabled;
 @property (nonatomic, assign) BOOL powerModeEnabled;
 @property (nonatomic, assign) NSTimeInterval sessionTimeout;
