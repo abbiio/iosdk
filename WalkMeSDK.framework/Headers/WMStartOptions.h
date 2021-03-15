@@ -33,9 +33,6 @@ typedef NS_ENUM(NSUInteger, WMStatsEventType)
     WMStatsEventTypeInteraction,
     WMStatsEventTypeGoal,
     WMStatsEventTypeViewTransition,
-    WMStatsEventTypeMonitoring,
-    WMStatsEventTypeMonitoringElement,
-    WMStatsEventTypeMonitoringView,
     WMStatsEventTypeUsers,
     WMStatsEventTypeOnboardingItemCompleted
 };
