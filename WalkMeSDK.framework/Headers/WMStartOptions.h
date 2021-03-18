@@ -78,7 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param completion a block to return a value for the action step
  */
 @optional
-- (void)campaign:(WMCampaignInfo *)campaign didPerformAction:(NSString *)actionType withArgs:(NSArray<NSString *> *)args andCompletion:(void (^)(id result))completion;
+- (void)campaign:(WMCampaignInfo *)campaign didPerformAction:(NSString *)actionType withArgs:(NSArray<NSString *> *)args andCompletion:(void (^)(__nullable id result))completion;
 
 @end
 
