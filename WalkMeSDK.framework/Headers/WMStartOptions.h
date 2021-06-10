@@ -30,7 +30,6 @@ typedef NS_ENUM(NSUInteger, WMStatsEventType)
     WMStatsEventTypePromoClk,
     WMStatsEventTypeStepImp,
     WMStatsEventTypeStepClk,
-    WMStatsEventTypeInteraction,
     WMStatsEventTypeGoal,
     WMStatsEventTypeViewTransition,
     WMStatsEventTypeUsers,

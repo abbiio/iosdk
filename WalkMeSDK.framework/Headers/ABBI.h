@@ -226,7 +226,7 @@ extern NSString *SDK_VERSION;
  *
  * @code
  * Usage Example :
- * [ABBI setEventsFilter:@[@(WMStatsEventTypeInteraction), @(WMStatsEventTypeViewTransition)]];
+ * [ABBI setEventsFilter:@[@(WMStatsEventTypeAppTerminated), @(WMStatsEventTypeViewTransition)]];
  *
  */
 + (void)setEventsFilter:(NSArray<NSNumber*>*)events;
