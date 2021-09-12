@@ -8,6 +8,6 @@ let package = Package(
                       targets: ["WalkMeSDK"])],
   targets: [.binaryTarget(name: "WalkMeSDK",
                           url: "https://assets.abbi.io/release/sdk/2.12.0.xcframework.zip",
-                          checksum: "52d3bb24a41a01923c8edb1ae6b72975fed93c7ac1ffeb6e2745611698be6c03")],
+                          checksum: "fcf13bfda57662281cee8a2ef2566f1a6177da8a8e6903e15d451211506eddb0")],
   swiftLanguageVersions: [.v5]
 )
