@@ -14,6 +14,7 @@
 @property (nonatomic,strong) NSString* campaginCta;
 @property (nonatomic,strong) NSString* campaignCtaId;
 @property (nonatomic,strong) NSString* campaignId;
+@property (nonatomic,strong) NSString* campaignType;
 @property (nonatomic,strong) WMUserData* userData;
 @property (nonatomic,strong) NSDictionary* campaignData;
 
