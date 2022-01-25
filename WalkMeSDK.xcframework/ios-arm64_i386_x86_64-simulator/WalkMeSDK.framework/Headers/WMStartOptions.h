@@ -103,6 +103,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *selfHostedURL;
 @property (nonatomic, strong) NSString *language;
 @property (nonatomic, strong) NSString *userId;
+@property (nonatomic, strong) NSString *startingCampaignId;
 @property (nonatomic, strong) NSArray<NSNumber *> *events;
 @property (nonatomic, assign) ABBIAppType type;
 @property (nonatomic, assign) WMProxyOptionMode proxyGatewayMode;
