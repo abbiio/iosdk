@@ -100,7 +100,21 @@ extern NSString *SDK_VERSION;
  * @param goalName the Goal name.
  * @param properties the Goal properties, key-value structured (if any).
  */
-+ (void)sendGoal:(NSString *)goalName withProperites:(NSDictionary *)properties;
++ (void)sendGoal:(NSString *)goalName withProperites:(NSDictionary *)properties __deprecated_msg("Use sendTrackedEvent instead.");
+
+/**
+ * Sends a Tracked Event to ABBI's Backend.
+ * A Tracked Event  is a user action that can be used to target your users.
+ *
+ * Usage Example :@
+ *
+ * [ABBI sendTrackedEvent:@"Bought a blue sword" withProperites:nil]
+ * [ABBI sendTrackedEvent:@"Bought a blue sword" withProperites:@{@"item_name", @"unlimited_calls"}]
+ *
+ * @param trackedEventName the Tracked Event  name.
+ * @param properties the Tracked Event  properties, key-value structured (if any).
+ */
++ (void)sendTrackedEvent:(NSString *)trackedEventName withProperites:(NSDictionary *)properties;
 
 /**
  * Sets a user attribute
