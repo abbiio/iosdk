@@ -1,0 +1,6 @@
+framework module WalkMeSDK {
+  umbrella header "WalkMeSDK.h"
+
+  export *
+  module * { export * }
+}
