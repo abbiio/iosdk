@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ABBI.h</key>
 		<data>
-		kWfoQ0gI2V/cgU6+G1+pkC6N3QE=
+		VLlnn4G274eCuL/QwJQrYYRw2XQ=
 		</data>
 		<key>Headers/UIView+WalkMe.h</key>
 		<data>
@@ -16,21 +16,25 @@
 		<data>
 		grJWkowYTU3kQpSO68EO8BhUKF8=
 		</data>
+		<key>Headers/WMExternalBridgeInterface.h</key>
+		<data>
+		KMtApbAy8OU19W3z41R3WiEOJy8=
+		</data>
 		<key>Headers/WMStartOptions.h</key>
 		<data>
-		7TvW0LJxuFVqhxeanxqMKUyXt50=
+		xmbQYxU5TzwtqM8F3JIxCUUEmtI=
 		</data>
 		<key>Headers/WMUserData.h</key>
 		<data>
-		LVHKC5/SpD40FP9OKQDyF/gJ6/Y=
+		YPBsxE5p/c+7iQt5LG6/kfbT18k=
 		</data>
 		<key>Headers/WalkMeSDK.h</key>
 		<data>
-		2XGu9Wm3/+Xvr9loB6eXj3zNOPA=
+		CCNnWfeZ4AFaHGIHlGvrqm3AbMg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aeKlDlXmDTpFwB/Hxi7XcA7Vmik=
+		yVvPjAqdtGdgIC/xBHDLXKWX4W8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mCjALz4RL+1zAmcBxWrVtjZ450Q+LDGzHsjS/bc4G34=
+			44ZPryqq0a2gAcFx6sr6p2cMhEci055VLnAfkSsQcCQ=
 			</data>
 		</dict>
 		<key>Headers/UIView+WalkMe.h</key>
@@ -60,25 +64,32 @@
 			flSWzZtGFG5H2jbc9Pb3EQ3669m2mzPy+VXuGtdtnsw=
 			</data>
 		</dict>
+		<key>Headers/WMExternalBridgeInterface.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bcR/k2AQ76+5jjkMfWxRQoeV1jIaWI5tt7j8dkOVUS8=
+			</data>
+		</dict>
 		<key>Headers/WMStartOptions.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E3BhChNJaOTcVvBTxHFm0FAwoAVPhRBrqmLPqZ0CtVs=
+			LMm9060NTX+e0OI33BLYVDoVLeLO32HGYSPsDi3zUMw=
 			</data>
 		</dict>
 		<key>Headers/WMUserData.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1fzFU8UVGdxDpT27M6FbfqWjRLEW4lloMNg9mT5jOlY=
+			R1mX4uEVLZpJHfncczncsNgyljxqdC/qadlk1HTdatg=
 			</data>
 		</dict>
 		<key>Headers/WalkMeSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wf7Q3qxiiAaKQwWk8XFso5zEdQPxRsncn1GvLoTyxxs=
+			t7X+XPw/GwJf7+xoK1tuXvFjoz1oJAeCBj4I2DP6bas=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

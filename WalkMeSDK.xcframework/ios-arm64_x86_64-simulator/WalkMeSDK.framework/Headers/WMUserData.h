@@ -100,4 +100,6 @@
  */
 @property (nonatomic,assign) BOOL isNewUser;
 
+- (NSDictionary *)json;
+
 @end

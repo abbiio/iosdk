@@ -14,7 +14,13 @@
  * Use - (void) start: (NSString*) appId withSecretKey: (NSString*) appSecretKey andApplicationType:(ABBIAppType) type;
  *
  */
-typedef enum {ABBI_APP_NATIVE = 10, ABBI_APP_HYBRID = 11, ABBI_APP_COCOS2D = 12, ABBI_APP_UNITY = 13, ABBI_APP_MAX = 14} ABBIAppType;
+typedef NS_ENUM(NSUInteger, ABBIAppType)
+{
+    ABBI_APP_NATIVE = 10,
+    ABBI_APP_HYBRID = 11,
+    ABBI_APP_UNITY = 13,
+    ABBI_APP_MAX = 14
+};
 
 /**
  * Enum for events which can be filtered from being sent
