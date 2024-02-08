@@ -4,3 +4,8 @@ framework module WalkMeSDK {
 
   module * { export * }
 }
+
+module WalkMeSDK.Swift {
+  header "WalkMeSDK-Swift.h"
+  requires objc
+}

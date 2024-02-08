@@ -20,6 +20,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WMStartOptions.h"
+#import "WMExternalBridgeInterface.h"
 
 extern NSString *SDK_VERSION;
 
@@ -32,6 +33,9 @@ extern NSString *SDK_VERSION;
 
 @property (nonatomic,weak) id<WMCampaignInfoDelegate> campaignInfoDelegate;
 @property (nonatomic,weak) id<WMAnalyticsDelegate> analyticsDelegate;
+@property (nonatomic,weak) id<WMExternalBridgeInterface> externalBridgeDelegate;
+
++ (void)setExternalBridgeDelegate:(id<WMExternalBridgeInterface>)delegate;
 
 /** 
  * Starts ABBI SDK.
