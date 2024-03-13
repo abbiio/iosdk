@@ -38,15 +38,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/AHjVjP+ygsNq063M7rm4I0x4zQ=
+		omU9khcCksGAc8MkV59XlVR8GFU=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		zIALUEZlddlpsADCZiL+07oAG7k=
+		e9sCluDOeqWZDSkyRU0u5wE9OGM=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		NZhJqofILwGCqAE3th79rPNtfG8=
+		wJgx+JjIuefASX0dyKy4+IjBCOI=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8I6QxJLWSH3Wsybpbg0olgJJT7U=
+		seWBgJSt0ag19JAHTkqL0gQhCus=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -86,11 +86,15 @@
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4LFg+9WYw2WhmCQFcOKuTdi+g3M=
+		x4mqWrt1MZYHlU02WsKtU6lfHmM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		ZKvglAX1u/6o7/9mVE13YjORggQ=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		EpSwnGcQ70VEcxSRg1y0wSNT0p8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -155,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XefBx3Pyem6sZ3pS6nViiMesGgdkTgDHxvp8fIkRs5Q=
+			IFtIzb7fj+Zr4sXxlA392GwW58rAN6h5HKIT/EoXBQE=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kFHC/bamVqNn3yhORCtTOGsvj1KHk1o12CapGwkvW5g=
+			FArc8P8vXZfn+oVZHyalYXNfWpkTSor3nn3mCG1A/mU=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -197,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ymnV6KUCacxBTBxb1XI8GroDyAbKB4/kFyqkQDWf/cU=
+			y9PEL+ayv4+086JMmdB11pEzlvPvKefdtgBMpmCjJk0=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -232,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LMKsig0lHMOXNdEGhimoz1/Q0QqZdF19vKdsSEsqbCM=
+			LKZSXIeqZqjio7mCYSVgFumeeBAJak1lqmUIt+Ldzlo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -240,6 +244,13 @@
 			<key>hash2</key>
 			<data>
 			SgJERsOQUzhYa2o2VKw3/1dBRTy6TY8ga5Mc5cIkCoE=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uinRyJhhUokjo/bBSSKy385qAt718L968J4Mp92LRXs=
 			</data>
 		</dict>
 	</dict>
