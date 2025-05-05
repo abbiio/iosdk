@@ -32,6 +32,13 @@
         "moduleName": "WalkMeSDK"
       },
       {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "WalkMeSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "SwiftUIElementHandler",
         "printedName": "SwiftUIElementHandler",
@@ -160,5 +167,34 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/Hx7371Sw3\/0\/walkme\/mobile\/sdk\/ios-sdk\/ABBISDK\/SwiftUIElementHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7151,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/Hx7371Sw3\/0\/walkme\/mobile\/sdk\/ios-sdk\/ABBISDK\/SwiftUIElementHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7491,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/Hx7371Sw3\/0\/walkme\/mobile\/sdk\/ios-sdk\/ABBISDK\/SwiftUIElementHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7934,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/builds\/Hx7371Sw3\/0\/walkme\/mobile\/sdk\/ios-sdk\/ABBISDK\/SwiftUIElementHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9075,
+      "length": 1,
+      "value": "1"
+    }
+  ]
 }
