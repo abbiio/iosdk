@@ -74,13 +74,11 @@
         "usr": "c:@M@WalkMeSDK@objc(cs)SwiftUIElementHandler",
         "mangledName": "$s9WalkMeSDK21SwiftUIElementHandlerC",
         "moduleName": "WalkMeSDK",
-        "intro_iOS": "13",
         "objc_name": "SwiftUIElementHandler",
         "declAttributes": [
           "AccessControl",
           "Final",
           "ObjC",
-          "Available",
           "RawDocComment"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -171,28 +169,28 @@
     {
       "filePath": "\/Users\/ec2-user\/builds\/Hx7371Sw3\/0\/walkme\/mobile\/sdk\/ios-sdk\/ABBISDK\/SwiftUIElementHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 7606,
+      "offset": 7663,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/builds\/Hx7371Sw3\/0\/walkme\/mobile\/sdk\/ios-sdk\/ABBISDK\/SwiftUIElementHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 7946,
+      "offset": 8003,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/builds\/Hx7371Sw3\/0\/walkme\/mobile\/sdk\/ios-sdk\/ABBISDK\/SwiftUIElementHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 8389,
+      "offset": 8446,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ec2-user\/builds\/Hx7371Sw3\/0\/walkme\/mobile\/sdk\/ios-sdk\/ABBISDK\/SwiftUIElementHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 9530,
+      "offset": 9587,
       "length": 1,
       "value": "1"
     }

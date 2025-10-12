@@ -10,8 +10,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @available(iOS 13, *)
-@objc(SwiftUIElementHandler) final public class SwiftUIElementHandler : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(SwiftUIElementHandler) final public class SwiftUIElementHandler : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
 }
