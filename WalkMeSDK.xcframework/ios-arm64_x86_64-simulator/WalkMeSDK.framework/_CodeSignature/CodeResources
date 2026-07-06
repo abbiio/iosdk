@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/WalkMeSDK-Swift.h</key>
 		<data>
-		sBjOOjc+qsaOSvxUzDYNmNQr0DA=
+		FpB6iX3neqfeeQFFTSbCrF+cJQU=
 		</data>
 		<key>Headers/WalkMeSDK.h</key>
 		<data>
@@ -38,15 +38,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OrKM0wekssrE0fTZ1yOZQHpIfNA=
+		cu9anQyu/F+ajWZhiiwNjWNPqsA=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Bsi6MFbRA8EDqaJO4edOGNHz3XY=
+		ddIXNR+xvYDaHTH2D3O/rdFFy9U=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		qVRoyftv1ryg/IUcMVAbVgNUlRA=
+		c2dT+Sy9ZrAEihR7xKaDhaLnzEE=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1R8+i1cbEy/IjAmXlOU0B6aT9AM=
+		1bCkxr2tZfg6gaj3kPyeJjxv+vU=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7YCYNt2MgVpq3PD87EmZ7GASIOo=
+		OHIclpXORHYtPgFKTCCszTTNdyM=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1R8+i1cbEy/IjAmXlOU0B6aT9AM=
+		1bCkxr2tZfg6gaj3kPyeJjxv+vU=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		POXecEKu1FVAFKgqogvbEIDr9Ds=
+		IQ07U8rOCCSAPjS9VGWNtcyqyG8=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -74,19 +74,19 @@
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IdV/ofEeTDQgG2cISYRjeQ3mHdk=
+		iqpFH7Ba/Xsgdi2jlIyj2jGgltA=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4QUKPw+v1lvTeUtKD0ZUAZBi7Vo=
+		fbaNPuO3WcPjR1UJMoWj3AMWZgE=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IdV/ofEeTDQgG2cISYRjeQ3mHdk=
+		iqpFH7Ba/Xsgdi2jlIyj2jGgltA=
 		</data>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aJWUXGyZ2PinosYm97FKf8Qx3pk=
+		Mezb+43fJ1qkwqu0wFDVJKffhwI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kKoR+4Ok6lVPsN2Qrqiakl+ZzANoKspNPOtQjEUvsd8=
+			TMUVgjJQymxAT4MaJC3TdLi7ie1d6l/bZvld7dlIQbw=
 			</data>
 		</dict>
 		<key>Headers/WalkMeSDK.h</key>
@@ -159,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CSzmR0VoPmkDMnW4d4PqDalLYNtURnoP2aJ+7XSjey0=
+			q8fb/fkDMXoNbqUUNGNQ6h3nBEtpCHnv2ZN3vLxcdlE=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3K5N2aLp5vIglilskNOmGMeKPJ5rS61rpkR2OVc063M=
+			aWfSZuUNN/TYrqwZUFUTcWzpqyXnWC7tIpdOPd0Yyl8=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -180,28 +180,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lbK9sXDuxjhIiFHvzolInVHJYfRJLgBjkuhM/g6fi7c=
+			9y3c1PI16DOH/FrFfSGzZnPybkSBVUKS92YYb+BdAds=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z8IB6ViDD3TcPWK5ajGqqpluIdk0wRrvHNBhc/b4bbU=
+			7EfllijT6Axn/fFoZPVE8PoP6m2zWKEab4YA7NdCmHU=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lbK9sXDuxjhIiFHvzolInVHJYfRJLgBjkuhM/g6fi7c=
+			9y3c1PI16DOH/FrFfSGzZnPybkSBVUKS92YYb+BdAds=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rRMwzhfdh9GixsbD28E30eVFIF/FzYrtT8ZLOXEDRPM=
+			XYfhPNNdt2O7AicZDGpWWh/EHsd7G0fKqG0WgTTP2LA=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -215,28 +215,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aKwFBKNSmi0RUb9F4GpwBQ+7WkCJRftWauwAwH873Vg=
+			wdgeIZ+LTVohcjdH4fUVhb0hFGqrluxlfscZ9C2Qe0o=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wi0So8DBvZanoGs1YiZCx6SIRP/svuJnbSh8jgJ4xgY=
+			i60O9fG5bOjsAD5bLBuZVCF9bJ9VRtKWcpO02904MKY=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aKwFBKNSmi0RUb9F4GpwBQ+7WkCJRftWauwAwH873Vg=
+			wdgeIZ+LTVohcjdH4fUVhb0hFGqrluxlfscZ9C2Qe0o=
 			</data>
 		</dict>
 		<key>Modules/WalkMeSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cnv+sN7yqDbz9soXCS99Gbf90dv5a6VMsoBZFL6dFt0=
+			0hRU7sBj26/9904A9TTLtyKtH5Z6E17gy/kgR5U5ZnU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
